@@ -1,0 +1,190 @@
+#works {
+    background-color: $white-color;
+    color: $dark-blue-text;
+    margin-top: -10rem;
+    padding-top: 15rem;
+
+  
+    @include respond(tab-land) {
+      margin-top: 0;
+      padding-top: 5rem;
+    }
+  
+    .work-wrapper {
+      margin-bottom: 4rem;
+      
+  
+      @include respond(phone) {
+        margin-bottom: 5rem;
+      }
+  
+      .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @include respond(phone) {
+          margin-bottom: 4rem;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          
+        }
+      }
+
+      .col {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+      }
+
+      .titleRow {
+        flex-basis: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @include respond(phone) {
+          margin: 0;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 4rem;
+          
+        }
+      }
+
+      .middleRow {
+        flex-direction: row;
+        justify-content: start;
+
+        @include respond(phone) {
+          justify-content: space-around;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .roleCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+
+        @include respond(phone) {
+          margin-bottom: 2rem;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .contentRow {
+        margin-top: -2rem;
+        
+        @include respond(phone) {
+          margin: 0;
+        }
+      }
+
+
+      .list {
+        display: flex;
+        padding-left: 4rem;
+        font-size: $small-font-size;
+        font-weight: lighter;
+      }
+
+      .list_title {
+        padding-top: .75rem;
+      }
+
+      .list_indent {
+        padding-left: 7rem;
+      }
+
+  
+      &__text {
+        text-align: left;
+  
+        @include respond(phone) {
+          margin-bottom: 2.5rem !important;
+        }
+        @include respond(tab-land) {
+          margin-bottom: 4.8rem;
+        }
+  
+
+
+        &-role {
+            color: #E07B00;
+            font-weight: bold;
+            margin-bottom: 1.8rem;
+            font-size: $mid-font-size;
+    
+            @include respond(phone) {
+              font-size: 2rem;
+            }
+          }
+
+        &-date {
+          font-size: $default-font-size;
+        }
+  
+        & p > a {
+          color: $secondary-color;
+        }
+      }
+
+      &-title {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        height: 50%;
+        color: $dealeron-blue;
+        font-weight: bold;
+        margin-left: 1.5rem;
+        font-size: $big-font-size;
+      }
+      
+  
+      &__image {
+        height: 0.5vw;
+        display: flex;
+        height: 75%;
+        align-items: center;
+        justify-content: center;
+
+
+  
+        @include respond(tab-land) {
+          margin: 0;
+        }
+  
+        & .thumbnail {
+          border: none;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          transition: all 0.2s ease-out;
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+          transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+            0.5s box-shadow,
+            0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  
+          @include respond(phone) {
+            border: 1px solid #d2d2d2;
+            box-shadow: none;
+            margin-bottom: 3.2rem;
+          }
+        }
+      }
+    }
+
+    .inside_row {
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+  }
+  

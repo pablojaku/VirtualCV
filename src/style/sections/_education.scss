@@ -1,0 +1,88 @@
+#education {
+  background-color: $white-color;
+  color: $gallaudet-yellow;
+  height: 50%;
+  border-top: 0px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+  padding-top: 0;
+
+  @include respond(tab-land) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .education-wrapper {
+    @include respond(phone) {
+      padding-bottom: 5rem;
+    }
+
+    &__image {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      @include respond(tab-port) {
+        padding-bottom: 6.4rem;
+      }
+      @include respond(tab-land) {
+        height: 100%;
+      }
+    }
+
+    &__info {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-self: center;
+      flex-direction: column;
+      color: $gallaudet-blue;
+
+      font-weight: bold;
+      float: center;
+
+      @include respond(phone) {
+        align-items: center;
+      }
+
+      &-text {
+        text-align: left;
+
+        @include respond(tab-port) {
+          font-size: 1rem;
+          text-align: center;
+        }
+        @include respond(phone) {
+          text-align: center;
+        }
+
+        &--degree {
+          font-size: $mid-font-size;
+
+          @include respond(phone) {
+            font-size: 4vw;
+            display: inline;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            font-style: normal;
+          }
+        }
+
+        &--date {
+          font-size: $default-font-size;
+          @include respond(phone) {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+}
