@@ -46,6 +46,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        
 
         @include respond(phone) {
           margin: 0;
@@ -60,9 +61,10 @@
       .middleRow {
         flex-direction: row;
         justify-content: start;
+        max-width: max-content;
 
         @include respond(phone) {
-          justify-content: space-around;
+          justify-content: flex-start;
           margin-bottom: 2rem;
         }
       }
@@ -72,6 +74,7 @@
         flex-direction: column;
         justify-content: end;
         align-items: flex-end;
+        width: fit-content;
 
         @include respond(phone) {
           margin-bottom: 2rem;

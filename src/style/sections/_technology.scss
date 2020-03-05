@@ -1,7 +1,7 @@
 #technology {
     //  background-color: $white-color;
       color: $dealeron-orange;
-      height: 50%;
+     height: 50%;
       border-top: 0px;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -12,6 +12,10 @@
         height: 100%;
         -webkit-clip-path: none;
         clip-path: none;
+
+        @include respond(phone){
+
+          }
       }
 
       .Title{
@@ -33,7 +37,12 @@
       }
       
       .imgCarousel {
-        width: 480px;
+        width: 80%;
+        height: 15rem;
+
+        @include respond(phone){
+
+        }
       }
 
     
@@ -45,6 +54,11 @@
       .subTitle {
         color:$dealeron-blue;
         font-size: $big-font-size;
+        margin-bottom: 3rem;
+
+        @include respond(phone) {
+          padding-bottom: 5rem;
+        }
       }
 
 
@@ -100,5 +114,36 @@
           }
         }
       }
+
+// the corousel
+      .carousel{
+        width: 100%;
+        display: flow-root;
+        
+        &__inner-slide{
+          display: contents;
+        }
+        &__slide {
+          width: 100%;
+        }
+        &__slider{
+          max-height: 180px;
+        
+          &-tray{
+          max-width: 100%;
+
+        }}
+      }
+
+      
+      
+    .li {
+      width: auto;
     }
+    }
+
+
+
+
+    
     

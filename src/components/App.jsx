@@ -4,7 +4,7 @@ import About from './About/About';
 import Works from './Work/Work';
 import Research from './Research/Research';
 import Education from './Education/Education';
-import Technology from './Technology/Technology';
+import Technology from './Technology/New_Technology';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
