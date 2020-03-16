@@ -2,23 +2,9 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Slider from 'react-slick';
+// https://react-slick.neostack.com
 import Title from '../Title/Title';
 import TechnologyImg from '../Image/TechnologyImg';
-
-// import all the pictures for the carousel
-import techFastly from '../../images/tech_fastly.png';
-import techRedis from '../../images/tech_redis.png';
-import techGraylog from '../../images/tech_graylog.png';
-import techLinux from '../../images/tech_linux.png';
-import techElasticsearch from '../../images/tech_elasticsearch.png';
-import techAnsible from '../../images/tech_ansible.png';
-import techGrafana from '../../images/tech_grafana.png';
-import techNginx from '../../images/tech_nginx.png';
-import techVscode from '../../images/tech_vscode.png';
-import techHyper from '../../images/tech_hyper.png';
-import techMarkdown from '../../images/tech_markdown.png';
-import techZsh from '../../images/tech_zsh.png';
-import techGithub from '../../images/tech_github.png';
 
 const Technology = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -109,6 +95,7 @@ const Technology = () => {
             </Fade>
           </Col>
           <Col md={6} sm={12}>
+            {/* agrega postman */}
             <Fade right duration={1000} delay={500} distance="30px">
               <h1 className="subTitle">My Toolbox</h1>
               <Slider {...settings}>

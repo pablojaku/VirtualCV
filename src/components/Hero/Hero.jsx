@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import TextLoop from "react-text-loop";
+import TextLoop from 'react-text-loop';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
@@ -29,13 +29,27 @@ const Header = () => {
             {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name || 'Your Name'}</span>
             <br />
-            I'm your next&nbsp;
-            <TextLoop mask={true} springConfig={{ stiffness: 180, damping: 10 }}>
-              <span>DevOps</span>
-              <span>Site Reliability</span>
-              <span>Infrastructure</span>
+            I&nbsp;
+            <TextLoop
+              interval={1000}
+              mask
+              springConfig={{ stiffness: 180, damping: 10 }}
+              className="textLoopOrange"
+            >
+              <span>enhance</span>
+              <span>elevate</span>
+              <span>augment</span>
+              <span>lift</span>
+              <span>enrich</span>
+              <span>boost</span>
             </TextLoop>
-            &nbsp;Engineer
+            &nbsp;
+            <TextLoop>
+              <span>infrastructures</span>
+              <span>systems</span>
+              <span>platforms</span>
+            </TextLoop>
+            .
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

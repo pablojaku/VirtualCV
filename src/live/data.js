@@ -19,12 +19,12 @@ export const heroData = {
 export const aboutData = {
   img: 'Pablo_Headshot.jpg',
   paragraphOne:
-    'Beginning with a formation in the IT department of a development company, I have a deep love for the complex systems that bring life to the modern applications that power our lives. With a B.S. in Information Technology (expected May 2020) and previous experience with enterprise SaaS, I will evolve into a DevOps / Infrastructure / Site Reliability Engineer.',
+    'Beginning with a formation in the IT department of a development company, I have a deep love for the complex systems that bring life to the modern applications that power our lives. With a B.S. in Information Technology (expected May 2020) and previous experience with enterprise SaaS, I will work on the infrastructures of tomorrow.',
   paragraphTwo:
     'I logically dissect platforms from end to end, following each hop the packet makes and understanding what data is generated to formulate the response. I design, stage, and deploy the new systems, such as a NoSQLs database or a reverse-proxy load balancer, that a SaaS needs to grow and mature.',
   paragraphThree:
     'Always ready to learn new technology, I am a fast & hands-on learner who enjoys finding potential improvements in any project by methodically assessing and integrating innovative platforms in a seamless manner. I will apply an analytical mindset to make independent yet prudent decisions on live applications. I believe that a strong work ethic and team synergy creates powerful solutions.',
-  resume: 'https://drive.google.com/file/d/15whyltQdQ53hVUQrAt8HYR_l8z0xSh05/view?usp=sharing', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/open?id=1Y9ws05kP22N7y4ADLKo5MHwdjpRyKiCM', // if no resume, the button will not show up
 };
 
 // Work DATA
