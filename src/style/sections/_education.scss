@@ -15,6 +15,7 @@
   }
 
   .education-wrapper {
+    margin-bottom: 5rem;
     @include respond(phone) {
       padding-bottom: 5rem;
     }
